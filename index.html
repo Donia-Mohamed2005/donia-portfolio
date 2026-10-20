@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#071426">
-  <meta name="description" content="الموقع الشخصي لدينا محمد إبراهيم محمد، للتعريف بالمهارات والمشروعات والتواصل.">
+  <meta name="theme-color" content="#06101f">
+  <meta name="description" content="الموقع الشخصي لدينا محمد إبراهيم محمد، طالبة بالفرقة الرابعة.">
   <title>دينا محمد إبراهيم محمد | Portfolio</title>
 
   <style>
@@ -58,7 +58,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      gap: 18px;
       flex-wrap: wrap;
       padding: 12px 0;
     }
@@ -66,29 +66,31 @@
     .logo {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       font-weight: bold;
-      font-size: 19px;
+      font-size: 17px;
     }
 
     .logo-mark {
-      width: 42px;
-      height: 42px;
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
       display: grid;
       place-items: center;
-      border-radius: 14px;
-      color: white;
-      background: linear-gradient(135deg, #168cff, #123b70);
-      box-shadow: 0 0 24px rgba(66, 165, 255, .2);
-    }
-
-    .logo-mark span {
-      font-size: 22px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, #42a5ff, #123b70);
+      color: #fff;
+      font-size: 27px;
+      font-weight: 900;
+      font-family: Arial, sans-serif;
+      border: 1px solid rgba(139, 206, 255, .5);
+      box-shadow: 0 0 20px rgba(66, 165, 255, .35);
+      direction: ltr;
     }
 
     .nav-links {
       display: flex;
-      gap: 22px;
+      gap: 20px;
       flex-wrap: wrap;
       font-size: 14px;
       color: var(--muted);
@@ -99,9 +101,9 @@
     }
 
     .hero {
-      padding: 100px 0 85px;
+      padding: 95px 0 80px;
       background:
-        radial-gradient(ellipse at 15% 15%, rgba(24, 107, 194, .18), transparent 45%),
+        radial-gradient(ellipse at 15% 15%, rgba(24, 107, 194, .2), transparent 45%),
         radial-gradient(ellipse at 85% 75%, rgba(23, 64, 125, .17), transparent 42%);
     }
 
@@ -114,7 +116,7 @@
 
     .eyebrow {
       display: inline-block;
-      padding: 5px 13px;
+      padding: 5px 14px;
       border: 1px solid var(--border);
       border-radius: 30px;
       color: var(--blue-light);
@@ -124,7 +126,7 @@
     }
 
     h1 {
-      font-size: clamp(32px, 5vw, 55px);
+      font-size: clamp(32px, 5vw, 53px);
       line-height: 1.5;
       margin-bottom: 14px;
     }
@@ -173,7 +175,6 @@
     }
 
     .profile-card {
-      min-height: 290px;
       padding: 30px;
       border: 1px solid var(--border);
       border-radius: 26px;
@@ -193,7 +194,7 @@
       color: white;
       font-size: 45px;
       font-weight: bold;
-      transform: rotate(-3deg);
+      box-shadow: 0 0 35px rgba(66, 165, 255, .2);
     }
 
     .profile-card h2 {
@@ -206,8 +207,19 @@
       font-size: 14px;
     }
 
+    .year-badge {
+      display: inline-block;
+      margin-top: 13px;
+      padding: 5px 13px;
+      color: var(--blue-light);
+      border: 1px solid rgba(66, 165, 255, .3);
+      border-radius: 20px;
+      background: rgba(66, 165, 255, .09);
+      font-size: 13px;
+    }
+
     section {
-      padding: 75px 0;
+      padding: 72px 0;
     }
 
     .section-title {
@@ -251,40 +263,22 @@
 
     .skill-card {
       padding: 22px;
+      transition: .25s;
+    }
+
+    .skill-card:hover {
+      border-color: rgba(66, 165, 255, .5);
+      transform: translateY(-3px);
     }
 
     .skill-card h3 {
       font-size: 17px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
     }
 
     .skill-card p {
       color: var(--muted);
       font-size: 14px;
-    }
-
-    .skill-label {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 9px;
-      font-size: 14px;
-    }
-
-    .progress {
-      height: 7px;
-      background: #1b304a;
-      border-radius: 20px;
-      overflow: hidden;
-      margin-bottom: 14px;
-    }
-
-    .progress span {
-      display: block;
-      height: 100%;
-      width: var(--level);
-      background: linear-gradient(90deg, #168cff, #8bceff);
-      border-radius: inherit;
     }
 
     .projects-grid {
@@ -374,16 +368,12 @@
 
     @media (max-width: 760px) {
       .hero {
-        padding: 65px 0;
+        padding: 60px 0;
       }
 
       .hero-grid {
         grid-template-columns: 1fr;
         gap: 28px;
-      }
-
-      .profile-card {
-        min-height: auto;
       }
 
       .nav-links {
@@ -397,11 +387,11 @@
       }
 
       section {
-        padding: 55px 0;
+        padding: 52px 0;
       }
 
       .logo {
-        font-size: 15px;
+        font-size: 14px;
       }
     }
   </style>
@@ -410,8 +400,8 @@
 <body>
   <header>
     <nav class="container">
-      <a class="logo" href="#home" aria-label="الصفحة الرئيسية">
-        <span class="logo-mark"><span>د</span></span>
+      <a class="logo" href="#home" aria-label="الرئيسية">
+        <span class="logo-mark">K</span>
         <span>دينا محمد إبراهيم محمد</span>
       </a>
 
@@ -429,16 +419,18 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="reveal">
-          <span class="eyebrow">مرحبًا بكم في موقعي الشخصي</span>
-          <h1>أنا <span>دينا محمد</span><br>أبني مهاراتي خطوة بخطوة</h1>
+          <span class="eyebrow">طالبة بالفرقة الرابعة</span>
+          <h1>أهلًا، أنا <span>دينا محمد</span></h1>
           <p>
-            أهلًا بكم في موقعي الشخصي، مساحة أعرض فيها مهاراتي ومشروعاتي
-            وأوثّق رحلتي في التعلم والتطوير. أؤمن بأن الاستمرار في التعلم
-            والتطبيق العملي هما أساس التقدم.
+            دينا محمد إبراهيم محمد، طالبة بالفرقة الرابعة.
+            أعمل على تطوير مهاراتي واكتساب خبرات جديدة من خلال التعلم
+            المستمر والتطبيق العملي، وأسعى إلى تحويل الأفكار إلى أعمال
+            منظمة بتصميم بسيط واحترافي.
           </p>
+
           <div class="buttons">
-            <a class="btn btn-primary" href="#projects">استكشف المشروعات</a>
-            <a class="btn btn-secondary" href="#contact">تواصل معي</a>
+            <a class="btn btn-primary" href="#projects">استكشفي المشروعات</a>
+            <a class="btn btn-secondary" href="#contact">تواصلي معي</a>
           </div>
         </div>
 
@@ -446,6 +438,7 @@
           <div class="profile-icon">د</div>
           <h2>دينا محمد إبراهيم محمد</h2>
           <p>التعلم المستمر · تطوير المهارات · الإبداع</p>
+          <span class="year-badge">الفرقة الرابعة 🎓</span>
         </div>
       </div>
     </section>
@@ -455,13 +448,14 @@
         <div class="section-title">
           <small>من أنا؟</small>
           <h2>نبذة عني</h2>
-          <p>التعرف على رحلتي وطموحي</p>
+          <p>طموحي هو التعلم والتطور المستمر.</p>
         </div>
+
         <div class="about-box">
-          أنا دينا محمد إبراهيم محمد. أنشأت هذا الموقع ليكون مساحة شخصية
-          لعرض المهارات والمشروعات التي أعمل عليها. أطمح إلى اكتساب خبرات
-          جديدة، وتطوير قدراتي باستمرار، وتحويل ما أتعلمه إلى تطبيقات
-          عملية تساعدني على التقدم وتحقيق أهدافي.
+          أنا دينا محمد إبراهيم محمد، طالبة بالفرقة الرابعة.
+          أنشأت هذا الموقع ليكون مساحة شخصية لعرض مهاراتي ومشروعاتي
+          وتوثيق ما أتعلمه. أهتم بتطوير قدراتي، واكتساب خبرات عملية،
+          والعمل على تحسين جودة مشروعاتي خطوة بخطوة.
         </div>
       </div>
     </section>
@@ -469,30 +463,30 @@
     <section id="skills">
       <div class="container">
         <div class="section-title">
-          <small>ما أتعلمه</small>
+          <small>قدراتي</small>
           <h2>المهارات</h2>
-          <p>مجالات أعمل على تطويرها بالممارسة والتطبيق.</p>
+          <p>مجالات للتعلم والتطبيق العملي.</p>
         </div>
 
         <div class="skills-grid">
           <div class="skill-card">
             <h3>🌐 HTML</h3>
-            <p>بناء هيكل صفحات الويب وتنظيم المحتوى.</p>
+            <p>تنظيم المحتوى وبناء هيكل صفحات الويب.</p>
           </div>
 
           <div class="skill-card">
             <h3>🎨 CSS</h3>
-            <p>تنسيق الصفحات واختيار الألوان والمسافات والتصميم.</p>
+            <p>تنسيق الصفحات والألوان والخطوط والتصميم.</p>
           </div>
 
           <div class="skill-card">
             <h3>📱 Responsive Design</h3>
-            <p>تنظيم المحتوى ليظهر بصورة مناسبة على الهاتف والكمبيوتر.</p>
+            <p>تصميم صفحات تتناسب مع شاشات الهواتف وأجهزة الكمبيوتر.</p>
           </div>
 
           <div class="skill-card">
             <h3>💻 تطوير الويب</h3>
-            <p>التعلم المستمر وتطبيق المفاهيم من خلال مشروعات عملية.</p>
+            <p>التعلم المستمر وتطبيق المعرفة من خلال بناء صفحات عملية.</p>
           </div>
         </div>
       </div>
@@ -511,8 +505,8 @@
             <div class="project-icon">✦</div>
             <h3>الموقع الشخصي</h3>
             <p>
-              تصميم هذه الصفحة للتعريف بصاحبة الموقع وتنظيم المعلومات
-              والمهارات ووسائل التواصل في واجهة عربية متجاوبة.
+              تصميم موقع شخصي باللغة العربية لعرض النبذة والمهارات
+              ووسائل التواصل في واجهة متجاوبة مع الموبايل والكمبيوتر.
             </p>
             <span class="project-tag">HTML</span>
             <span class="project-tag">CSS</span>
@@ -521,13 +515,13 @@
 
           <article class="project-card">
             <div class="project-icon">⌘</div>
-            <h3>مشروعات قادمة</h3>
+            <h3>مشروعات مستقبلية</h3>
             <p>
-              مساحة مخصصة لإضافة المشروعات الجديدة بعد تنفيذها، مع وصف
-              واضح لفكرة كل مشروع والتقنيات المستخدمة ورابط المعاينة.
+              سيتم تحديث هذا القسم عند إضافة مشروعات جديدة، مع توضيح
+              فكرة كل مشروع والتقنيات المستخدمة ورابط العرض.
             </p>
-            <span class="project-tag">تطبيق عملي</span>
             <span class="project-tag">تطوير مستمر</span>
+            <span class="project-tag">تطبيق عملي</span>
           </article>
         </div>
       </div>
@@ -540,10 +534,12 @@
             <small>لنتواصل</small>
             <h2>يسعدني التواصل معكم</h2>
           </div>
+
           <p>
-            يمكنكم التواصل معي عبر واتساب لمناقشة الأفكار أو تبادل الخبرات
-            أو الاستفسار عن الموقع.
+            للتواصل وتبادل الأفكار والخبرات، يمكنكم مراسلتي عبر واتساب
+            أو زيارة حسابي على GitHub.
           </p>
+
           <div class="buttons" style="justify-content:center">
             <a
               class="btn btn-primary"
@@ -551,6 +547,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >تواصل عبر واتساب</a>
+
             <a
               class="btn btn-secondary"
               href="https://github.com/Donia-Mohamed2005"
@@ -567,6 +564,7 @@
     <div class="container">
       © <span id="year"></span> دينا محمد إبراهيم محمد — جميع الحقوق محفوظة.
     </div>
+    
   </footer>
 
   <script>
@@ -575,4 +573,3 @@
   </script>
 </body>
 </html>
-
